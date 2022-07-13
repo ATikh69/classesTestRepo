@@ -1,4 +1,5 @@
 from src.figure import Figure
+from src.Circle import Circle
 
 
 class Rectangle(Figure):

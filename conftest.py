@@ -20,6 +20,7 @@ def test_rectangle():
 def test_triangle():
     return Triangle(3, 4, 5)
 
+
 @pytest.fixture
 def test_square():
-    return Square(3)
+    return Square(3, 3)

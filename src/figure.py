@@ -7,6 +7,3 @@ class Figure:
 
     def perimeter(self):
         pass
-
-    def add_area(self):
-        pass
