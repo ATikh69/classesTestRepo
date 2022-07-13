@@ -8,12 +8,15 @@ class Triangle(Figure):
     def __init__(self, a, b, c):
         if (a + b) < c or (b + c) < a or (a + c) < b:
             raise ValueError("Треугольник не может быть создан!")
-        self.__a = a
-        self.__b = b
-        self.__c = c
+        self.a = a
+        self.b = b
+        self.c = c
 
-    def perimeter(a, b, c):
-        return a + b + c
+    @property
+    def perimeter(self):
+        return self.a + self.b + self.c
 
-    def area(a, b, c):
-        return round(sqrt(((a + b + c) / 2) * ((a + b + c) / 2 - a) * ((a + b + c) / 2 - b) * ((a + b + c) / 2 - c)),2)
+    @property
+    def area(self):
+        return round(sqrt(((self.a + self.b + self.c) / 2) * ((self.a + self.b + self.c) / 2 - self.a) * (
+                (self.a + self.b + self.c) / 2 - self.b) * ((self.a + self.b + self.c) / 2 - self.c)), 2)

@@ -1,9 +1,9 @@
 from src.Square import Square
 
 
-def test_square_area():
-    assert Square.area(3) == 9
+def test_square_area(test_square):
+    assert test_square.area == 9
 
 
-def test_square_perimetr():
-    assert Square.perimeter(3) == 12
+def test_square_perimetr(test_square):
+    assert test_square.perimeter == 12

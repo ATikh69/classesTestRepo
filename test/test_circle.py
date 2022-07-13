@@ -1,9 +1,10 @@
 from src.Circle import Circle
+import conftest
 
 
-def test_square_area():
-    assert Circle.area(1) == 3.14
+def test_square_area(test_circle):
+    assert test_circle.area == 3.14
 
 
-def test_square_perimetr():
-    assert Circle.perimeter(1) == 6.28
+def test_square_perimetr(test_circle):
+    assert test_circle.perimeter == 6.28

@@ -1,18 +1,16 @@
 from src.figure import Figure
 
-a = None
-
 
 class Square(Figure):
     NAME = "SQUARE"
 
     def __init__(self, a):
-        self.__a = a
+        self.a = a
 
-    def area(a):
-        return a * a
+    @property
+    def area(self):
+        return self.a ** 2
 
-    def perimeter(a):
-        return a * 4
-
-
+    @property
+    def perimeter(self):
+        return self.a * 4

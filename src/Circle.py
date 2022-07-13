@@ -7,12 +7,12 @@ class Circle(Figure):
     NAME = "CIRCLE"
 
     def __init__(self, r):
-        self.__r = r
+        self.r = r
 
-    def perimeter(r):
-        return round((2 * math.pi * r), 2)
+    @property
+    def perimeter(self):
+        return round((2 * math.pi * self.r), 2)
 
-    def area(r):
-        return round((math.pi * r * r), 2)
-
-
+    @property
+    def area(self):
+        return round((math.pi * self.r * self.r), 2)

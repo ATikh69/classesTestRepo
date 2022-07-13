@@ -8,9 +8,9 @@ def test_triangle_creating_negative():
         Triangle(3, 8, 3)
 
 
-def test_triangle_perimetr():
-    assert Triangle.perimeter(3, 4, 5) == 12
+def test_triangle_perimetr(test_triangle):
+    assert test_triangle.perimeter == 12
 
 
-def test_triangle_area():
-    assert Triangle.area(3, 4, 5) == 6
+def test_triangle_area(test_triangle):
+    assert test_triangle.area == 6
