@@ -1,4 +1,5 @@
 class Figure:
+
     def __int__(self, name):
         self.name = name
 
@@ -7,3 +8,8 @@ class Figure:
 
     def perimeter(self):
         pass
+
+    def add_area(self, figure):
+        if isinstance(figure, Figure):
+            return self.area + figure.area
+        raise ValueError

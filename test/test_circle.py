@@ -1,7 +1,3 @@
-from src.Circle import Circle
-import conftest
-
-
 def test_square_area(test_circle):
     assert test_circle.area == 3.14
 

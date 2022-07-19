@@ -1,8 +1,3 @@
-import pytest
-
-from src.Rectangle import Rectangle
-
-
 def test_triangle_perimetr(test_rectangle):
     assert test_rectangle.perimeter == 14
 

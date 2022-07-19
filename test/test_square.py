@@ -1,6 +1,3 @@
-from src.Square import Square
-
-
 def test_square_area(test_square):
     assert test_square.area == 9
 

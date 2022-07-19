@@ -4,6 +4,7 @@ from src.Circle import Circle
 from src.Square import Square
 from src.Rectangle import Rectangle
 from src.Triangle import Triangle
+from src.Foo import Foo
 
 
 @pytest.fixture
@@ -24,3 +25,8 @@ def test_triangle():
 @pytest.fixture
 def test_square():
     return Square(3, 3)
+
+
+@pytest.fixture
+def test_foo():
+    return Foo(1)
